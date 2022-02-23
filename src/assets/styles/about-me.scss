@@ -1,0 +1,121 @@
+@import "global";
+
+.about-section {
+  padding: 20px;
+}
+
+.about-chevron {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: $custom-black;
+}
+
+.profile-picture-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  max-width: 442px;
+
+  img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 320px;
+    border-radius: 100%;
+  }
+
+  .circle {
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    border-radius: 100%;
+  }
+
+  .primary-circle {
+    animation: AnimateFromBottom 5s linear infinite;
+    background-color: $primary-color;
+    left: 17px;
+    bottom: 0;
+  }
+
+  .secondary-circle {
+    animation: AnimateFromTop 4s linear infinite;
+    width: 18px;
+    height: 18px;
+    background-color: $secondary-color;
+    top: 20px;
+    left: -10px;
+  }
+
+  .tertiary-circle {
+    animation: AnimateFromTop 4.5s linear infinite;
+    background-color: $tertiary-color;
+    right: 15px;
+    top: 30px;
+  }
+}
+
+.about-title {
+  font-size: 40px;
+  margin-top: 30px;
+
+  span {
+    color: $primary-color;
+  }
+}
+
+.about-text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: $text-secondary;
+}
+
+.about-button {
+  margin-top: 30px;
+  transition-duration: 0.6s;
+
+  &:focus {
+    background-color: $pressed-primary;
+  }
+}
+
+@keyframes AnimateFromBottom {
+  0%,
+  100% {
+    bottom: -15px;
+  }
+  50% {
+    bottom: 15px;
+  }
+}
+
+@keyframes AnimateFromTop {
+  0%,
+  100% {
+    top: -15px;
+  }
+  50% {
+    top: 15px;
+  }
+}
+
+// Desktop
+@media only screen and (min-width: 992px) {
+  .about-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    div:nth-child(2) {
+      order: -1;
+    }
+  }
+
+  .profile-picture-container {
+    max-width: 474px;
+    max-height: 344px;
+  }
+
+  .about-chevron {
+    display: none;
+  }
+}
