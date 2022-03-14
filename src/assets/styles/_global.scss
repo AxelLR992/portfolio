@@ -31,3 +31,16 @@ button {
 
   cursor: pointer;
 }
+
+h2 {
+  color: $custom-black;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: $text-secondary;
+  padding: 10px 0;
+}

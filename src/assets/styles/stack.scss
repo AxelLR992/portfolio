@@ -1,0 +1,27 @@
+.stack {
+  margin-top: 30px;
+
+  &__logos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  &__logo {
+    width: calc(25% - 1rem);
+    margin-top: 1rem;
+
+    img {
+      width: 100%;
+    }
+
+    h5 {
+      text-align: center;
+    }
+
+    @media only screen and (min-width: 992px) {
+      width: calc(10% - 1rem);
+      margin-top: 1rem;
+    }
+  }
+}
