@@ -1,5 +1,13 @@
+@import "global";
+
 .stack {
   margin-top: 30px;
+
+  &__title {
+    span {
+      color: $primary-color;
+    }
+  }
 
   &__logos {
     display: flex;

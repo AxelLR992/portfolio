@@ -1,0 +1,45 @@
+@import "global";
+
+.projects {
+  margin-top: 30px;
+  background-color: #eeeeee;
+
+  h2 {
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__elements {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.project {
+  img {
+    width: 100%;
+  }
+
+  h5 {
+    font-weight: bold;
+    font-size: 23px;
+  }
+
+  &__technologies {
+    margin-top: 10px;
+    div {
+      display: inline;
+      padding: 5px;
+      border: 1px solid $primary-color;
+      border-radius: 5px;
+      background-color: $primary-color;
+      color: white;
+
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+  }
+}

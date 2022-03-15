@@ -12,8 +12,10 @@ import JavaLogo from "../assets/images/stack/java.png";
 
 const StackSection = () => {
   return (
-    <div className="stack">
-      <h2>My stack</h2>
+    <section className="stack">
+      <h2 className="stack__title">
+        My <span>stack</span>
+      </h2>
       <h5 className="subtitle">Lorem ipsum dolor sit amet</h5>
       <div className="stack__logos">
         <Logo src={TypescriptLogo} title="TypeScript" />
@@ -26,7 +28,7 @@ const StackSection = () => {
         <Logo src={PhpLogo} title="PHP" />
         <Logo src={JavaLogo} title="Java" />
       </div>
-    </div>
+    </section>
   );
 };
 
