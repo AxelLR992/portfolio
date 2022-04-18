@@ -14,6 +14,10 @@ $text-secondary: #9e9e9e;
   src: url(../fonts/raleway/Raleway-Regular.ttf);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: ralewayRegular, Arial, sans-serif;
   line-height: 1.3;

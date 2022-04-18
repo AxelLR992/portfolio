@@ -18,6 +18,7 @@
   "dependencies": {
     "@mdi/js": "^6.5.95",
     "@mdi/react": "^1.5.0",
+    "@types/react-modal": "^3.13.1",
     "gatsby": "^4.8.0",
     "gatsby-plugin-google-analytics": "^4.8.0",
     "gatsby-plugin-image": "^2.8.0",
@@ -27,9 +28,12 @@
     "gatsby-plugin-sitemap": "^5.8.0",
     "gatsby-source-filesystem": "^4.8.0",
     "gatsby-transformer-sharp": "^4.8.0",
+    "i18next": "^21.6.16",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-i18next": "^11.16.6",
+    "react-modal": "^3.14.4",
     "sass": "^1.49.8"
   },
   "devDependencies": {

@@ -1,0 +1,40 @@
+@import "global";
+
+.contact {
+  h2 {
+    span {
+      color: $primary-color;
+    }
+  }
+
+  &__content {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr;
+
+    p {
+        font-size: 25px;
+    }
+
+    &__form {
+      div {
+        margin-top: 20px;
+        label {
+          display: block;
+        }
+
+        input,
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border-radius: 5px;
+          border: 1px solid #a1a1a1;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

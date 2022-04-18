@@ -19,20 +19,8 @@ const ProjectsSection = () => {
             Permite a las diferentes áreas del Instituto la generación de 
             solicitudes de mantenimiento, para posteriormente ser gestionadas 
             por un analista.`}
-            technologies={["React JS", "TypeScript", "SQL Server"]}
+            technologies={["React JS", "TypeScript", "SQL Server", "Nest", "Nest", "Nest", "Nest", "Nest"]}
             image={SsmanImage}
-          />
-          <Project
-            title="Project 2"
-            description="Lorem ipsum dolor sit amet"
-            technologies={["React JS", "TypeScript", "SQL Server"]}
-            image=""
-          />
-          <Project
-            title="Project 3"
-            description="Lorem ipsum dolor sit amet"
-            technologies={["React JS", "TypeScript", "SQL Server"]}
-            image=""
           />
         </div>
       </Container>
