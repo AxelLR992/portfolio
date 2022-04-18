@@ -2,24 +2,21 @@ import React, { FunctionComponent } from "react";
 import "../assets/styles/projects.scss";
 import Container from "./Container";
 import SsmanImage from "../assets/images/projects/ssman.png";
+import { useTranslation } from "react-i18next";
 
 const ProjectsSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="projects">
       <Container>
-        <h2>
-          My <span>projects</span>
-        </h2>
-        <h5 className="subtitle">Lorem ipsum dolor sit amet.</h5>
+        <h2 dangerouslySetInnerHTML={{ __html: t("home.my_projects") }} />
+        <h5 className="subtitle">{t("home.my_projects_subtitle")}</h5>
         <div className="projects__elements">
           <Project
-            title="SSMAN"
-            description={`El Sistema de Solicitudes de Mantenimiento (SSMAN) fue 
-            desarrollado para el Departamento de Mantenimiento del ISSET. 
-            Permite a las diferentes áreas del Instituto la generación de 
-            solicitudes de mantenimiento, para posteriormente ser gestionadas 
-            por un analista.`}
-            technologies={["React JS", "TypeScript", "SQL Server", "Nest", "Nest", "Nest", "Nest", "Nest"]}
+            title={t("projects.ssman_title")}
+            description={t("projects.ssman_description")}
+            technologies={["React JS", "TypeScript", "SQL Server", "Nest"]}
             image={SsmanImage}
           />
         </div>

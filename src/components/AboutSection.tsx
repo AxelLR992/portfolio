@@ -3,7 +3,7 @@ import ProfilePicture from "../assets/images/profile-picture.jpg";
 import "../assets/styles/about-me.scss";
 import Icon from "@mdi/react";
 import { mdiChevronDown } from "@mdi/js";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
   const { t } = useTranslation();
@@ -25,17 +25,13 @@ const AboutSection = () => {
         </div>
       </div>
       <div>
-        <h2 className="about-title">
-          <Trans>Hi! My name is</Trans>
-          <br /> <Trans>Axel León and I'm a</Trans>
-          <br />{" "}
-          <span>
-            <Trans>Web Developer</Trans>
-          </span>
-        </h2>
-        <p className="about-text">{t("aboutMessage")}</p>
+        <h2
+          className="about-title"
+          dangerouslySetInnerHTML={{ __html: t("home.title") }}
+        />
+        <p className="about-text">{t("home.about_me_message")}</p>
         <button className="about-button">
-          <Trans>Get in touch</Trans>
+          {t("general.contact_invitation_button")}
         </button>
       </div>
       <a href="#" className="about-chevron">

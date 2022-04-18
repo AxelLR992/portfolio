@@ -4,16 +4,17 @@ import "../assets/styles/footer.scss";
 import ReactLogo from "../assets/images/stack/react.png";
 import TypescriptLogo from "../assets/images/stack/typescript.png";
 import GatsbyLogo from "../assets/images/stack/gatsby.png";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <footer className="footer">
-      Copyright {new Date().getFullYear()} &copy; - Website developed by Axel
-      León
+      {t("footer.message", { year: new Date().getFullYear() })}
       <br />
-      <button onClick={() => setModalIsOpen(true)}>About this website</button>
+      <button onClick={() => setModalIsOpen(true)}>{t("footer.about")}</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}

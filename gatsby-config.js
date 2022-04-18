@@ -34,7 +34,7 @@ module.exports = {
           interpolation: {
             escapeValue: false,
           },
-          keySeparator: false,
+          // keySeparator: false,
           nsSeparator: false,
         },
       },

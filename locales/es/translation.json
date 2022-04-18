@@ -1,6 +1,30 @@
 {
-  "Hi! My name is": "¡Hola! Mi nombre es",
-  "Axel León and I'm a": "Axel León, y soy un",
-  "Web Developer": "Desarrollador Web",
-  "aboutMessage": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem totam molestias officia numquam soluta provident inventore placeat facilis labore pariatur. Eius, porro! Esse officiis eius, quibusdam repudiandae at velit dolorem dolore tempore ut magnam aliquid voluptatem quidem molestias, nostrum, natus fugit ad nesciunt iste rem beatae maiores magni. Id, dignissimos?"
+  "home": {
+    "title": "¡Hola! Mi nombre es<br/> Axel León, y soy un<br/> <span>Desarrollador Web<span/>",
+    "about_me_message": "Soy un desarrollador de software entusiasta, especializado en el uso de tecnologías de desarrollo web. Me gusta trabajar en equipo, y me siento muy cómodo aprendiendo cosas nuevas.",
+    "my_stack": "Mi <span>stack</span>",
+    "my_stack_subtitle": "Si necesitas a alguien que conozca estas tecnologías, cuenta conmigo",
+    "my_projects": "Mis <span>proyectos",
+    "my_projects_subtitle": "Conóceme a través de mi trabajo",
+    "contact_me": "<span>Contáctame</span>",
+    "contact_me_subtitle": "Envía un mensaje con los detalles de tu proyecto",
+    "contact_me_message": "Si tienes una idea en mente y crees que yo puedo aportarle valor a tu equipo de desarrollo, no dudes en contactarme."
+  },
+  "projects": {
+    "ssman_title": "SSMAN",
+    "ssman_description": "El Sistema de Solicitudes de Mantenimiento (SSMAN) fue desarrollado para el Departamento de Mantenimiento del ISSET. Permite a las diferentes áreas del Instituto la generación de solicitudes de mantenimiento, para posteriormente ser gestionadas por un analista."
+  },
+  "footer": {
+    "message": "Copyright {{year}} © - Sitio web desarrollado por Axel León",
+    "about": "Acerca de este sitio web"
+  },
+  "general": {
+    "contact_invitation_button": "Contáctame"
+  },
+  "forms": {
+    "full_name": "Nombre completo",
+    "email": "Correo electrónico",
+    "subject": "Asunto",
+    "message": "Mensaje"
+  }
 }

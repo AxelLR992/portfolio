@@ -9,14 +9,18 @@ import HtmlLogo from "../assets/images/stack/html.png";
 import CssLogo from "../assets/images/stack/css.png";
 import PhpLogo from "../assets/images/stack/php.png";
 import JavaLogo from "../assets/images/stack/java.png";
+import { useTranslation } from "react-i18next";
 
 const StackSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="stack">
-      <h2 className="stack__title">
-        My <span>stack</span>
-      </h2>
-      <h5 className="subtitle">Lorem ipsum dolor sit amet</h5>
+      <h2
+        className="stack__title"
+        dangerouslySetInnerHTML={{ __html: t("home.my_stack") }}
+      ></h2>
+      <h5 className="subtitle">{t("home.my_stack_subtitle")}</h5>
       <div className="stack__logos">
         <Logo src={TypescriptLogo} title="TypeScript" />
         <Logo src={JavascriptLogo} title="JavaScript" />

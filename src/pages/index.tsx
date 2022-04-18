@@ -4,6 +4,7 @@ import AboutSection from "../components/AboutSection";
 import ContactSection from "../components/ContactSection";
 import Container from "../components/Container";
 import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
 import ProjectsSection from "../components/ProjectsSection";
 import SEO from "../components/SEO";
 import StackSection from "../components/StackSection";
@@ -13,6 +14,7 @@ const IndexPage = () => {
     <>
       <SEO />
       <main>
+        <Navbar />
         <Container>
           <AboutSection />
           <StackSection />
