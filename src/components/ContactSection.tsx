@@ -6,7 +6,7 @@ const ContactSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="contact">
+    <section id="contact" className="contact">
       <h2 dangerouslySetInnerHTML={{ __html: t("home.contact_me") }}></h2>
       <h5 className="subtitle">{t("home.contact_me_subtitle")}</h5>
       <div className="contact__content">

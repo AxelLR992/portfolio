@@ -8,7 +8,7 @@ const ProjectsSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <Container>
         <h2 dangerouslySetInnerHTML={{ __html: t("home.my_projects") }} />
         <h5 className="subtitle">{t("home.my_projects_subtitle")}</h5>

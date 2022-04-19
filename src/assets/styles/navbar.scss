@@ -5,14 +5,16 @@
   display: flex;
   justify-content: space-between;
   position: sticky;
-  top: -10px;
-  background-color: white;
+  top: 0px;
   z-index: 10;
+  background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   &__logo {
     font-weight: bold;
     font-size: 24px;
+    color: black;
+    text-decoration: none;
   }
 
   ul {
@@ -20,19 +22,40 @@
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center;
+
+    &:not(:nth-child(3)) {
+      display: none;
+    }
 
     li {
       display: inline;
-      margin-left: 20px;
+      margin-left: 10px;
+      font-weight: bold;
 
       a {
-          color: black;
-          transition-duration: 0.4s;
+        color: black;
+        transition-duration: 0.4s;
+        text-decoration: none;
 
-          &:hover {
-              color: $pressed-primary;
-          }
+        &:hover {
+          color: $pressed-primary;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    ul {
+      align-items: center;
+
+      &:not(:nth-child(3)) {
+        display: flex;
+      }
+
+      li {
+        margin-left: 20px;
       }
     }
   }

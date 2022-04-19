@@ -1,5 +1,30 @@
 {
   "home": {
-    "title": "¡Hola! Mi nombre es<br/> Axel León, y soy un<br/> <span>Desarrollador Web<span/>"
+    "title": "Hi! My name is<br/> Axel León, and I'm a<br/> <span>Web Developer<span/>",
+    "about_me_message": "I am an enthusiast software developer, specialized in web development technologies. I like team work, and I feel very comfortable learning new stuff.",
+    "my_stack": "My <span>stack</span>",
+    "my_stack_subtitle": "Si necesitas a alguien que conozca estas tecnologías, cuenta conmigo",
+    "my_projects": "My <span>proyects",
+    "my_projects_subtitle": "Conóceme a través de mi trabajo",
+    "contact_me": "<span>Contact</span> me",
+    "contact_me_subtitle": "Envía un mensaje con los detalles de tu proyecto",
+    "contact_me_message": "Si tienes una idea en mente y crees que yo puedo aportarle valor a tu equipo de desarrollo, no dudes en contactarme."
+  },
+  "projects": {
+    "ssman_title": "SSMAN",
+    "ssman_description": "El Sistema de Solicitudes de Mantenimiento (SSMAN) fue desarrollado para el Departamento de Mantenimiento del ISSET. Permite a las diferentes áreas del Instituto la generación de solicitudes de mantenimiento, para posteriormente ser gestionadas por un analista."
+  },
+  "footer": {
+    "message": "Copyright {{year}} © - Sitio web desarrollado por Axel León",
+    "about": "Acerca de este sitio web"
+  },
+  "general": {
+    "contact_invitation_button": "Get in touch"
+  },
+  "forms": {
+    "full_name": "Full name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message"
   }
 }

@@ -5,14 +5,23 @@ import "../assets/styles/navbar.scss";
 import LanguageSwitch from "./LanguageSwitcher";
 
 const Navbar: FunctionComponent = () => {
+
   return (
-    <nav className="navbar">
+    <nav className={`navbar`}>
+      <a href="#" className="navbar__logo">{`\{AxelLeon\}`}</a>
       <ul>
-        <li className="navbar__logo">{`\{AxelLeon\}`}</li>
-        <li>Sobre mí</li>
-        <li>Mi stack</li>
-        <li>Mis proyectos</li>
-        <li>Contacto</li>
+        <li>
+          <a href="#about">Sobre mí</a>
+        </li>
+        <li>
+          <a href="#stack">Mi stack</a>
+        </li>
+        <li>
+          <a href="#projects">Mis proyectos</a>
+        </li>
+        <li>
+          <a href="#contact">Contacto</a>
+        </li>
       </ul>
       <ul>
         <li>

@@ -9,7 +9,7 @@ const AboutSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="about-section">
+    <section id="about" className="about-section">
       <div
         style={{
           display: "flex",

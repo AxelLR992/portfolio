@@ -15,7 +15,7 @@ const StackSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="stack">
+    <section id="stack" className="stack">
       <h2
         className="stack__title"
         dangerouslySetInnerHTML={{ __html: t("home.my_stack") }}
