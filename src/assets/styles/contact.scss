@@ -13,7 +13,7 @@
     grid-template-columns: 1fr 1fr;
 
     p {
-        font-size: 25px;
+      font-size: 25px;
     }
 
     &__form {
@@ -29,11 +29,26 @@
           padding: 10px;
           border-radius: 5px;
           border: 1px solid #a1a1a1;
+          resize: none;
         }
 
         &:first-child {
           margin-top: 0;
         }
+      }
+
+      button {
+        margin-top: 20px;
+      }
+
+      &__errored-input {
+        border: 1px solid red !important;
+      }
+    }
+
+    &__alert {
+      p {
+        font-size: 14px;
       }
     }
   }

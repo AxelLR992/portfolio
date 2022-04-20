@@ -1,0 +1,40 @@
+@import "global";
+
+.alert {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+
+  &__message {
+    display: inline;
+    font-size: 14px;
+  }
+
+  &__icon {
+    margin-right: 20px;
+    width: 30px;
+  }
+
+  &__close-icon {
+    width: 15px;
+    align-self: flex-start;
+    cursor: pointer;
+  }
+}
+
+.alert-error {
+  background-color: #f2504e;
+}
+
+.alert-success {
+  background-color: #00b297;
+}
+.alert-info {
+  background-color: #55b4cc;
+}
+.alert-warning {
+  background-color: #e99452;
+}

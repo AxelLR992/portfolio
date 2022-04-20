@@ -38,6 +38,12 @@ button {
   text-transform: uppercase;
 
   cursor: pointer;
+
+  &:disabled {
+    cursor: default;
+    background-color: $text-secondary;
+    color: $custom-black;
+  }
 }
 
 h2 {

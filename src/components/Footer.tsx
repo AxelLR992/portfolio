@@ -6,6 +6,8 @@ import TypescriptLogo from "../assets/images/stack/typescript.png";
 import GatsbyLogo from "../assets/images/stack/gatsby.png";
 import { useTranslation } from "react-i18next";
 
+Modal.setAppElement(`#___gatsby`);
+
 const Footer = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const { t } = useTranslation();

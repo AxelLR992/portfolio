@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>Email received from axel-portfolio.nodeaxan.com</title>
+
+    <style>
+      * {
+        font-family: Raleway, Arial, Helvetica, sans-serif;
+      }
+
+      .title {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .details {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .details li {
+        margin-top: 15px;
+      }
+
+      .details li strong {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">
+      You've received a new email from axel-portfolio.nodeaxan.com
+    </h1>
+    <h3>Details:</h3>
+    <ul class="details">
+      <li>Full name: <strong>{{fullName}}</strong></li>
+      <li>
+        Email:
+        <strong><a href="mailto:{{email}}">{{email}}</a></strong>
+      </li>
+      <li>
+        Subject:
+        <strong>{{subject}}</strong>
+      </li>
+      <li>
+        Message:
+        <strong>{{message}}</strong>
+      </li>
+    </ul>
+  </body>
+</html>
