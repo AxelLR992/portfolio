@@ -10,6 +10,7 @@ module.exports = {
     description:
       "Hello! I'm Axel León: A React JS + TypeScript + Express Web developer, with some others side skills.",
     url: "https://axel-portfolio.nodeaxan.com",
+    siteUrl: "https://axel-portfolio.nodeaxan.com",
   },
   plugins: [
     "gatsby-plugin-sass",
