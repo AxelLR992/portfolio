@@ -4,7 +4,10 @@ import "../assets/styles/footer.scss";
 import ReactLogo from "../assets/images/stack/react.png";
 import TypescriptLogo from "../assets/images/stack/typescript.png";
 import GatsbyLogo from "../assets/images/stack/gatsby.png";
+import PhpLogo from "../assets/images/stack/php.png";
 import { useTranslation } from "react-i18next";
+import Icon from "@mdi/react";
+import { mdiGithub } from "@mdi/js";
 
 Modal.setAppElement(`#___gatsby`);
 
@@ -16,7 +19,10 @@ const Footer = () => {
     <footer className="footer">
       {t("footer.message", { year: new Date().getFullYear() })}
       <br />
-      <button onClick={() => setModalIsOpen(true)}>{t("footer.about")}</button>
+      <button
+        onClick={() => setModalIsOpen(true)}
+        dangerouslySetInnerHTML={{ __html: t("footer.about") }}
+      ></button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => setModalIsOpen(false)}
@@ -33,24 +39,31 @@ const Footer = () => {
         }}
       >
         <div className="footer__about-modal-content">
-          <h4>
-            About this <span>website</span>
-          </h4>
-          <p>
-            This website was developed by Axel León, using these technologies:
-          </p>
+          <h4 dangerouslySetInnerHTML={{ __html: t("footer.about") }}></h4>
+          <p>{t("footer.description")}</p>
           <div className="footer__about-modal-content__logos">
             <Logo src={ReactLogo} title="React JS" />
             <Logo src={TypescriptLogo} title="TypeScript" />
             <Logo src={GatsbyLogo} title="Gatsby" />
+            <Logo src={PhpLogo} title="PHP" />
           </div>
 
           <button
             onClick={() => setModalIsOpen(false)}
             className="footer__about-modal-content__close-btn"
           >
-            Close
+            {t("general.close")}
           </button>
+
+          <a
+            href="https://github.com/AxelLR992/portfolio"
+            className="footer__about-modal-content__github-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon path={mdiGithub} size={1} />
+            <span>{t("footer.github_button")}</span>
+          </a>
         </div>
       </Modal>
     </footer>

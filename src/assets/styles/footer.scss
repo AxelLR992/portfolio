@@ -22,14 +22,23 @@
       width: 80px;
     }
 
+    &__github-btn {
+      color: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 15px;
+    }
+
     &__close-btn {
-        width: 100px;
-        float: right;
+      width: 100px;
+      display: block;
+      margin-left: auto;
     }
 
     &__logos {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
     }
 
     &__logo {
@@ -37,7 +46,7 @@
       padding: 20px;
 
       h5 {
-          text-align: center;
+        text-align: center;
       }
     }
   }

@@ -1,29 +1,40 @@
-import { mdiGithub, mdiLinkedin, mdiTwitter } from "@mdi/js";
+import { mdiGithub, mdiGitlab, mdiLinkedin, mdiTwitter } from "@mdi/js";
 import Icon from "@mdi/react";
 import React, { FunctionComponent } from "react";
+import { useTranslation } from "react-i18next";
 import "../assets/styles/navbar.scss";
 import LanguageSwitch from "./LanguageSwitcher";
 
 const Navbar: FunctionComponent = () => {
+  const { t } = useTranslation();
 
   return (
     <nav className={`navbar`}>
       <a href="#" className="navbar__logo">{`\{AxelLeon\}`}</a>
       <ul>
         <li>
-          <a href="#about">Sobre mí</a>
+          <a href="#about">{t("navbar.about")}</a>
         </li>
         <li>
-          <a href="#stack">Mi stack</a>
+          <a href="#stack">{t("navbar.stack")}</a>
         </li>
         <li>
-          <a href="#projects">Mis proyectos</a>
+          <a href="#projects">{t("navbar.projects")}</a>
         </li>
         <li>
-          <a href="#contact">Contacto</a>
+          <a href="#contact">{t("navbar.contact")}</a>
         </li>
       </ul>
       <ul>
+        <li>
+          <a
+            href="https://gitlab.com/AxelLeon"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <Icon path={mdiGitlab} title="GitLab" size={1} />
+          </a>
+        </li>
         <li>
           <a
             href="https://github.com/AxelLR992"

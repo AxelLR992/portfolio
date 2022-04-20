@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "about": "Sobre mí",
+    "stack": "Mi stack",
+    "projects": "Mis proyectos",
+    "contact": "Contacto"
+  },
   "home": {
     "title": "¡Hola! Mi nombre es<br/> Axel León, y soy un<br/> <span>Desarrollador Web<span/>",
     "about_me_message": "Soy un desarrollador de software entusiasta, especializado en el uso de tecnologías de desarrollo web. Me gusta trabajar en equipo, y me siento muy cómodo aprendiendo cosas nuevas.",
@@ -16,10 +22,14 @@
   },
   "footer": {
     "message": "Copyright {{year}} © - Sitio web desarrollado por Axel León",
-    "about": "Acerca de este sitio web"
+    "about": "Acerca de este <span>sitio web</span>",
+    "description": "Este sitio web fue desarrollado por Axel León, utilizando estas tecnologías:",
+    "github_button": "Ver en github"
   },
   "general": {
-    "contact_invitation_button": "Contáctame"
+    "contact_invitation_button": "Contáctame",
+    "close": "Cerrar",
+    "send": "Enviar"
   },
   "forms": {
     "full_name": "Nombre completo",
