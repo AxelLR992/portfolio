@@ -116,7 +116,7 @@ const ContactSection = () => {
           </div>
 
           <button type="submit" disabled={sending}>
-            {sending ? "Enviando..." : "Enviar"}
+            {sending ? `${t("general.sending")}...` : t("general.send")}
           </button>
           <Alert
             className="contact__content__alert"
